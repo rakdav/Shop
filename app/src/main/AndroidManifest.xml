@@ -9,9 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Shop">
-        <activity android:name=".ProductActivity"></activity>
+        <activity android:name=".Controllers.ProductActivity"></activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".Controllers.MainActivity"
             android:label="@string/app_name"
             android:theme="@style/Theme.Shop.NoActionBar">
             <intent-filter>

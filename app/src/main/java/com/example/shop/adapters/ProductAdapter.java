@@ -11,6 +11,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.shop.Models.Tovar;
@@ -43,7 +44,7 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ViewHold
         holder.nameView.setText(tovar.getName());
         holder.edizmView.setText(tovar.getEdizm());
         holder.priceview.setText(Double.toString(tovar.getPrice()));
-        holder.linearLayout.setOnClickListener(new View.OnClickListener() {
+        holder.cv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -59,14 +60,14 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ViewHold
     public class ViewHolder extends RecyclerView.ViewHolder {
         final ImageView imageView;
         final TextView nameView, edizmView,priceview;
-        final LinearLayout linearLayout;
+        final CardView cv;
         ViewHolder(View view){
             super(view);
-            imageView = (ImageView)view.findViewById(R.id.image);
-            nameView = (TextView) view.findViewById(R.id.nameTovar);
-            edizmView = (TextView) view.findViewById(R.id.edIzm);
-            priceview=view.findViewById(R.id.priceTovar);
-            linearLayout=view.findViewById(R.id.container);
+            imageView = (ImageView)view.findViewById(R.id.person_photo);
+            nameView = (TextView) view.findViewById(R.id.person_name);
+            edizmView = (TextView) view.findViewById(R.id.person_age);
+            priceview=view.findViewById(R.id.person_age);
+            cv=view.findViewById(R.id.cv);
         }
     }
 

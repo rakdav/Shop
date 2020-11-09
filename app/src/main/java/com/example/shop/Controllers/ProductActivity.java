@@ -21,7 +21,8 @@ public class ProductActivity extends AppCompatActivity {
         setTitle(R.string.tovars);
         productRV=findViewById(R.id.productRV);
         List<Tovar> tovars=new ArrayList<Tovar>();
-        tovars.add(new Tovar(android.R.drawable.bottom_bar,"Bred","dsfdsfdsfdsfssf",45,0,"шт."));
+        tovars.add(new Tovar(R.drawable.android,"Bred","dsfdsfdsfdsfssf",45,0,"шт."));
+        tovars.add(new Tovar(R.drawable.android,"Bred","dsfdsfdsfdsfssf",45,0,"шт."));
         ProductAdapter adapter = new ProductAdapter(this,tovars);
         // устанавливаем для списка адаптер
         productRV.setAdapter(adapter);
